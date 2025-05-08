@@ -12,6 +12,7 @@
       color: #f0e6d2;
       scroll-behavior: smooth;
     }
+
     header {
       background-color: #000;
       padding: 20px;
@@ -20,11 +21,32 @@
       top: 0;
       z-index: 1000;
     }
+
+    .dragon-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+
+    .dragon {
+      height: 100px;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
     header h1 {
       margin: 0;
       font-size: 2.5em;
       color: #f0e6d2;
     }
+
     nav ul {
       list-style: none;
       padding: 0;
@@ -33,15 +55,18 @@
       background-color: #111;
       margin: 10px 0 0 0;
     }
+
     nav ul li {
       margin: 0 15px;
     }
+
     nav ul li a {
       color: #f0e6d2;
       text-decoration: none;
       padding: 10px;
       display: block;
     }
+
     nav ul li a:hover {
       background-color: #333;
     }
@@ -51,16 +76,19 @@
       height: 400px;
       position: relative;
     }
+
     .slides {
       display: flex;
       width: 300%;
       animation: slide 15s infinite;
     }
+
     .slides img {
       width: 100vw;
       height: 400px;
       object-fit: cover;
     }
+
     @keyframes slide {
       0% { margin-left: 0; }
       33% { margin-left: -100vw; }
@@ -96,6 +124,9 @@
 <body>
 
   <header>
+    <div class="dragon-container">
+      <img src="https://media.tenor.com/nUgsxiJK2mUAAAAi/dragon-fire-breath.gif" alt="Lego Dragon" class="dragon" />
+    </div>
     <h1>Abhey Singh Guram</h1>
     <nav>
       <ul>
