@@ -2,8 +2,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Abhey Singh Guram, Beloit College senior in Political Science, Quantitative Economics, and Environmental Studies, focusing on climate and economic research." />
+  <meta name="description" content="Abhey Singh Guram, Beloit College 2024 graduate in Political Science, Quantitative Economics, and Environmental Studies, focusing on climate and economic research." />
   <meta name="keywords" content="Abhey Guram, portfolio, economics, political science, climate research, Beloit College" />
+  <meta property="og:title" content="Abhey Singh Guram Portfolio" />
+  <meta property="og:description" content="Portfolio of Abhey Singh Guram, Beloit College graduate in Political Science, Quantitative Economics, and Environmental Studies." />
+  <meta property="og:image" content="assets/images/profile.jpg" />
+  <meta property="og:url" content="https://abheyguram.github.io" />
+  <meta name="twitter:card" content="summary_large_image" />
   <title>Abhey Singh Guram</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lora:wght@400;500&display=swap" rel="stylesheet" />
   <style>
@@ -14,7 +19,7 @@
     }
 
     body {
-      font-family: 'Lora', serif;
+      font-family: 'Lora', Georgia, serif;
       background: #f8efe4; /* Ivory */
       color: #333;
       line-height: 1.9;
@@ -32,11 +37,23 @@
     }
 
     header h1 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Playfair Display', Times, serif;
       font-size: 2.5em;
       font-weight: 700;
       color: #f8efe4;
       letter-spacing: 1px;
+    }
+
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5em;
+      color: #f8efe4;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 20px;
     }
 
     nav ul {
@@ -47,8 +64,12 @@
       gap: 25px;
     }
 
+    nav ul.active {
+      display: flex;
+    }
+
     nav ul li a {
-      font-family: 'Lora', serif;
+      font-family: 'Lora', Georgia, serif;
       color: #f8efe4;
       text-decoration: none;
       font-size: 1.1em;
@@ -73,6 +94,17 @@
       border-bottom: 1px solid #d4a373;
     }
 
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+      z-index: 0;
+    }
+
     .carousel {
       position: absolute;
       top: 0;
@@ -83,11 +115,31 @@
       animation: slide 15s infinite ease-in-out;
     }
 
+    .carousel:hover {
+      animation-play-state: paused;
+    }
+
     .carousel img {
       width: 33.33%;
       height: 100%;
       object-fit: cover;
-      filter: sepia(20%);
+    }
+
+    .carousel-control {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #2e4a3e;
+      color: #f8efe4;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      z-index: 2;
+      font-family: 'Lora', Georgia, serif;
+    }
+
+    .carousel-control:focus {
+      outline: 2px solid #d4a373;
     }
 
     @keyframes slide {
@@ -101,19 +153,18 @@
       width: 120px;
       height: 120px;
       clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-      border: 3px solid #d4a373;
+      border: 4px solid #d4a373;
       margin-bottom: 20px;
       object-fit: cover;
-      filter: sepia(20%);
       position: relative;
       z-index: 1;
     }
 
     .hero h2 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Playfair Display', Times, serif;
       font-size: 2.5em;
       font-weight: 500;
-      color: #2e4a3e;
+      color: #f8efe4; /* Light color for contrast */
       margin-bottom: 10px;
       position: relative;
       z-index: 1;
@@ -123,7 +174,7 @@
       max-width: 600px;
       margin: 0 auto;
       font-size: 1.2em;
-      color: #555;
+      color: #f8efe4; /* Light color for contrast */
       position: relative;
       z-index: 1;
     }
@@ -136,14 +187,24 @@
       border: 1px solid #d4a373;
       border-radius: 5px;
       position: relative;
-      background-image: url('https://via.placeholder.com/100x100?text=Geometric+Pattern');
+    }
+
+    section::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://www.transparenttextures.com/patterns/subtle-geometric.png');
       background-repeat: repeat;
       background-size: 50px;
-      background-opacity: 0.1;
+      opacity: 0.1;
+      z-index: -1;
     }
 
     section h2 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Playfair Display', Times, serif;
       font-size: 2em;
       color: #2e4a3e;
       margin-bottom: 20px;
@@ -164,7 +225,7 @@
     }
 
     .card h3 {
-      font-family: 'Lora', serif;
+      font-family: 'Lora', Georgia, serif;
       font-size: 1.5em;
       color: #333;
       margin-bottom: 10px;
@@ -206,7 +267,7 @@
       padding: 10px 20px;
       border-radius: 5px;
       margin-top: 20px;
-      font-family: 'Lora', serif;
+      font-family: 'Lora', Georgia, serif;
       transition: background 0.3s, color 0.3s;
     }
 
@@ -221,7 +282,7 @@
       color: #f8efe4;
       text-align: center;
       padding: 15px;
-      font-family: 'Lora', serif;
+      font-family: 'Lora', Georgia, serif;
       font-size: 1em;
     }
 
@@ -230,18 +291,28 @@
         font-size: 2em;
       }
 
-      nav ul {
-        flex-wrap: wrap;
-        gap: 15px;
+      .nav-toggle {
+        display: block;
       }
 
-      nav ul li {
-        margin: 5px;
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background: #2e4a3e;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
       }
 
       .hero {
         height: 400px;
         padding: 60px 15px;
+      }
+
+      .carousel img {
+        height: 300px; /* Smaller for mobile */
       }
 
       .hero h2 {
@@ -267,6 +338,7 @@
 <body>
   <header>
     <h1>Abhey Singh Guram</h1>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
     <nav>
       <ul>
         <li><a href="#home" aria-label="Home">Home</a></li>
@@ -281,40 +353,41 @@
   </header>
 
   <section class="hero" id="home">
-    <div class="carousel">
-      <img src="https://via.placeholder.com/1920x500?text=Minnesota+Wilderness" alt="Minnesota Wilderness Travel Photo" loading="lazy" />
-      <img src="https://via.placeholder.com/1920x500?text=Punjab+Villages" alt="Punjab Villages Travel Photo" loading="lazy" />
-      <img src="https://via.placeholder.com/1920x500?text=New+York+Cityscape" alt="New York Cityscape Travel Photo" loading="lazy" />
+    <div class="carousel" role="region" aria-label="Travel photo carousel">
+      <button class="carousel-control" aria-label="Pause carousel">Pause</button>
+      <img src="assets/images/minnesota_wilderness.jpg" alt="Scenic view of Minnesota wilderness during environmental research" />
+      <img src="assets/images/punjab_villages.jpg" alt="Rural Punjab village during field research" />
+      <img src="assets/images/nyc_cityscape.jpg" alt="New York City skyline from a student networking trip" />
     </div>
-    <img src="https://via.placeholder.com/120?text=Profile+Pic" alt="Abhey Singh Guram Portrait" class="profile" loading="lazy" />
+    <img src="assets/images/profile.jpg" alt="Abhey Singh Guram Portrait" class="profile" />
     <h2>About Me</h2>
-    <p>I’m a recent graduate from Beloit College with triple major in Political Science, Quantitative Economics, and Environmental Studies. I’m interested in political economy, environmental justice, and development policy—especially how strategic decision-making and structural inequalities shape outcomes in global governance and rural economies.
-    I’ve developed a strong interest in how policy, power, and economics intersect. I’m now looking to take that curiosity further in graduate school, where I hope to deepen my training in political economy and applied research to inform real-world change.
-
- <section id="research">
-  <h2>Research</h2>
-
-  <div class="card">
-    <h3>Climate Negotiations & Game Theory</h3>
     <p>
-      Authored <em>"Asymmetric Power, Impatience, and the Climate Commons"</em> (2025), a game-theoretic analysis of global climate negotiations. Forthcoming in <a href="https://about.illinoisstate.edu/critique/" target="_blank">Critique: A Worldwide Student Journal of Politics</a>. <a href="#">[PDF Link]</a>
+      I’m a 2024 graduate from Beloit College with a triple major in Political Science, Quantitative Economics, and Environmental Studies. I’m interested in political economy, environmental justice, and development policy—especially how strategic decision-making and structural inequalities shape outcomes in global governance and rural economies.
+      I’ve developed a strong interest in how policy, power, and economics intersect. I’m now looking to take that curiosity further in graduate school, where I hope to deepen my training in political economy and applied research to inform real-world change.
     </p>
-  </div>
+  </section>
 
-  <div class="card">
-    <h3>Agrarian Distress in Punjab</h3>
-    <p>
-      Led 2022 field research surveying 346 small and marginal farmers across rural Punjab, India. Analyzed links between economic stress, mental health, and substance use using econometric and psychological tools. Paper in progress. <a href="#">[PDF Link]</a>
-    </p>
-  </div>
-
-  <div class="card">
-    <h3>Eco-Entrepreneurship & Policy</h3>
-    <p>
-      Co-authored <em>"Eco-Entrepreneurship and (Unintended?) Rent Seeking"</em> (2024) for the Miller Upton Forum, examining sustainability policy and rent-seeking behavior. Under review for publication. <a href="#">[PDF Link]</a>
-    </p>
-  </div>
-</section>
+  <section id="research">
+    <h2>Research</h2>
+    <div class="card">
+      <h3>Climate Negotiations & Game Theory</h3>
+      <p>
+        Authored <em>"Asymmetric Power, Impatience, and the Climate Commons"</em> (2025), a game-theoretic analysis of global climate negotiations. Forthcoming in <a href="https://about.illinoisstate.edu/critique/" target="_blank">Critique: A Worldwide Student Journal of Politics</a>. [PDF available upon request]
+      </p>
+    </div>
+    <div class="card">
+      <h3>Agrarian Distress26 Distress in Punjab</h3>
+      <p>
+        Led 2022 field research surveying 346 small and marginal farmers across rural Punjab, India. Analyzed links between economic stress, mental health, and substance use using econometric and psychological tools. Paper in progress. [PDF available upon request]
+      </p>
+    </div>
+    <div class="card">
+      <h3>Eco-Entrepreneurship & Policy</h3>
+      <p>
+        Co-authored <em>"Eco-Entrepreneurship and (Unintended?) Rent Seeking"</em> (2024) for the Miller Upton Forum, examining sustainability policy and rent-seeking behavior. Under review for publication. [PDF available upon request]
+      </p>
+    </div>
+  </section>
 
   <section id="projects">
     <h2>Projects</h2>
@@ -345,12 +418,14 @@
   </section>
 
   <section id="books">
-    <h2>Books I’m Reading</h2>
+    <h2>Books Shaping My Work</h2>
     <div class="card">
+      <p>These books inform my research and inspire my thinking on political economy, environmental justice, and sustainability:</p>
       <ul>
-        <li><a href="https://www.amazon.com/Eco-Emancipation/dp/1234567890" target="_blank">Eco-Emancipation</a> – Exploring environmental liberation.</li>
-        <li><a href="https://www.amazon.com/Slow-Violence/dp/1234567891" target="_blank">Slow Violence</a> – Examining gradual environmental harm.</li>
-        <li><a href="https://www.amazon.com/Book-Title/dp/1234567892" target="_blank">Book Title</a> – A compelling read on sustainability.</li>
+        <li><a href="https://www.amazon.com/New-Environmental-Economics-Sustainability-Justice/dp/1509533818" target="_blank">The New Environmental Economics: Sustainability and Justice</a> by Eloi Laurent (2020) – Integrates sustainability and justice into economic analysis.</li>
+        <li><a href="https://www.amazon.com/Reconsidering-Reparations-Philosophy-Repair/dp/0197508898" target="_blank">Reconsidering Reparations</a> by Olúfhemi O. Táíwò (2022) – Explores reparations for historical and environmental injustices.</li>
+        <li><a href="https://www.amazon.com/Before-Streetlights-Come-Climate-Solutions/dp/150647862X" target="_blank">Before the Streetlights Come On: Black America’s Urgent Call for Climate Solutions</a> by Heather McTeer Toney (2023) – Highlights Black leadership in climate justice.</li>
+        <li><a href="https://www.amazon.com/Climate-Change-Racist-Privilege-Struggle/dp/1785787756" target="_blank">Climate Change Is Racist: Race, Privilege and the Struggle for Climate Justice</a> by Jeremy Williams (2021) – Examines structural racism in climate impacts.</li>
       </ul>
     </div>
   </section>
@@ -381,7 +456,7 @@
       Email: <a href="mailto:mogulr@beloit.edu">mogulr@beloit.edu</a><br>
       Phone: 608-363-2350<br>
       Office: Porter Hall<br>
-      <a href="https://www.beloit.edu/live/profiles/7270-randi-mogul" target="_blank">Profile</a></p>
+      <a href="https://www.belos://www.beloit.edu/live/profiles/7270-randi-mogul" target="_blank">Profile</a></p>
     </div>
   </section>
 
@@ -390,11 +465,27 @@
     <div class="card">
       <p>Email me at <strong>abheyguram@gmail.com</strong> or connect on <a href="https://linkedin.com/in/abheyguram" target="_blank">LinkedIn</a>.</p>
       <a href="mailto:abheyguram@gmail.com" class="cta">Get in Touch</a>
+      <a href="assets/resume.pdf" class="cta" target="_blank">Download Resume</a>
     </div>
   </section>
 
   <footer>
-    © 2025 Abhey Singh Guram · Built with Elegance
+    © <script>document.write(new Date().getFullYear())</script> Abhey Singh Guram · Built with Elegance
   </footer>
+
+  <script>
+    // Hamburger menu toggle
+    document.querySelector('.nav-toggle').addEventListener('click', () => {
+      document.querySelector('nav ul').classList.toggle('active');
+    });
+
+    // Carousel pause/play
+    document.querySelector('.carousel-control').addEventListener('click', () => {
+      const carousel = document.querySelector('.carousel');
+      const isPaused = carousel.style.animationPlayState === 'paused';
+      carousel.style.animationPlayState = isPaused ? 'running' : 'paused';
+      document.querySelector('.carousel-control').textContent = isPaused ? 'Pause' : 'Play';
+    });
+  </script>
 </body>
 </html>
