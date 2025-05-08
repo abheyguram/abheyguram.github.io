@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -101,7 +102,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+      background: rgba(0, 0, 0, 0.2); /* Slightly lighter overlay */
       z-index: 0;
     }
 
@@ -164,7 +165,7 @@
       font-family: 'Playfair Display', Times, serif;
       font-size: 2.5em;
       font-weight: 500;
-      color: #f8efe4; /* Light color for contrast */
+      color: #2e4a3e; /* Darker for consistency */
       margin-bottom: 10px;
       position: relative;
       z-index: 1;
@@ -174,7 +175,7 @@
       max-width: 600px;
       margin: 0 auto;
       font-size: 1.2em;
-      color: #f8efe4; /* Light color for contrast */
+      color: #555; /* Darker for readability */
       position: relative;
       z-index: 1;
     }
@@ -196,7 +197,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('https://www.transparenttextures.com/patterns/subtle-geometric.png');
+      background-image: url('https://assets.transparenttextures.com/patterns/subtle-geometric.png');
       background-repeat: repeat;
       background-size: 50px;
       opacity: 0.1;
@@ -344,7 +345,7 @@
         <li><a href="#home" aria-label="Home">Home</a></li>
         <li><a href="#research" aria-label="Research">Research</a></li>
         <li><a href="#projects" aria-label="Projects">Projects</a></li>
-        <li><a href="#journal" aria-label="Travels">Travels</a></li>
+        <li><a href="#personal" aria-label="Personal Life">Personal Life</a></li>
         <li><a href="#books" aria-label="Books">Books</a></li>
         <li><a href="#references" aria-label="References">References</a></li>
         <li><a href="#contact" aria-label="Contact">Contact</a></li>
@@ -353,7 +354,7 @@
   </header>
 
   <section class="hero" id="home">
-    <div class="carousel" role="region" aria-label="Travel photo carousel">
+    <div class="carousel" role="region" aria-label="Photo carousel">
       <button class="carousel-control" aria-label="Pause carousel">Pause</button>
       <img src="assets/images/minnesota_wilderness.jpg" alt="Scenic view of Minnesota wilderness during environmental research" />
       <img src="assets/images/punjab_villages.jpg" alt="Rural Punjab village during field research" />
@@ -376,7 +377,7 @@
       </p>
     </div>
     <div class="card">
-      <h3>Agrarian Distress26 Distress in Punjab</h3>
+      <h3>Agrarian Distress in Punjab</h3>
       <p>
         Led 2022 field research surveying 346 small and marginal farmers across rural Punjab, India. Analyzed links between economic stress, mental health, and substance use using econometric and psychological tools. Paper in progress. [PDF available upon request]
       </p>
@@ -405,22 +406,23 @@
     </div>
   </section>
 
-  <section id="journal">
-    <h2>Travels</h2>
+  <section id="personal">
+    <h2>Personal Life</h2>
     <div class="card">
-      <p>My travels inspire my work. Here are some highlights:</p>
+      <p>Beyond my academic and professional pursuits, I find balance and inspiration in my hobbies and interests:</p>
       <ul>
-        <li><strong>Minnesota Wilderness</strong> – Researched environmental justice in 2023, learning survival skills.</li>
-        <li><strong>St. Louis & New York</strong> – Led a 2022 student trip to network with alumni.</li>
-        <li><strong>Punjab, India</strong> – Studied farmers’ challenges in 2022, connecting with my roots.</li>
+        <li><strong>Hiking and Nature</strong> – Exploring trails and natural landscapes fuels my passion for environmental justice and sustainability.</li>
+        <li><strong>Cooking South Asian Cuisine</strong> – I enjoy experimenting with recipes from Punjab and beyond, connecting with my cultural roots through food.</li>
+        <li><strong>Board Games and Strategy</strong> – I love strategic games like Settlers of Catan, which sharpen my analytical thinking and echo my research in game theory.</li>
+        <li><strong>Community Engagement</strong> – Organizing and attending local events keeps me grounded and connected to those around me.</li>
       </ul>
     </div>
   </section>
 
   <section id="books">
-    <h2>Books Shaping My Work</h2>
-    <div class="card">
-      <p>These books inform my research and inspire my thinking on political economy, environmental justice, and sustainability:</p>
+    <h2>Reading List 2025</h2>
+    <div class="cardstruediv>
+      <p>These books are shaping my thinking on political economy, environmental justice, and sustainability. Suggestions for new reads are always welcome—reach out via the <a href="#contact">contact section</a>!</p>
       <ul>
         <li><a href="https://www.amazon.com/New-Environmental-Economics-Sustainability-Justice/dp/1509533818" target="_blank">The New Environmental Economics: Sustainability and Justice</a> by Eloi Laurent (2020) – Integrates sustainability and justice into economic analysis.</li>
         <li><a href="https://www.amazon.com/Reconsidering-Reparations-Philosophy-Repair/dp/0197508898" target="_blank">Reconsidering Reparations</a> by Olúfhemi O. Táíwò (2022) – Explores reparations for historical and environmental injustices.</li>
@@ -456,7 +458,7 @@
       Email: <a href="mailto:mogulr@beloit.edu">mogulr@beloit.edu</a><br>
       Phone: 608-363-2350<br>
       Office: Porter Hall<br>
-      <a href="https://www.belos://www.beloit.edu/live/profiles/7270-randi-mogul" target="_blank">Profile</a></p>
+      <a href="https://www.beloit.edu/live/profiles/7270-randi-mogul" target="_blank">Profile</a></p>
     </div>
   </section>
 
