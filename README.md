@@ -1,85 +1,160 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Abhey Singh Guram</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #fdfdfd;
-      color: #333;
-      line-height: 1.6;
+      font-family: 'Georgia', serif;
+      background-color: #1a1a1a;
+      color: #f0e6d2;
+      scroll-behavior: smooth;
     }
     header {
-      background: #3366cc;
-      color: white;
-      padding: 2rem;
+      background-color: #000;
+      padding: 20px;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.5em;
+      color: #f0e6d2;
     }
-    header p {
-      font-style: italic;
-      margin-top: 0.5rem;
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #111;
+      margin: 10px 0 0 0;
     }
-    main {
-      padding: 2rem;
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #f0e6d2;
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+    }
+    nav ul li a:hover {
+      background-color: #333;
+    }
+
+    .carousel {
+      overflow: hidden;
+      height: 400px;
+      position: relative;
+    }
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 15s infinite;
+    }
+    .slides img {
+      width: 100vw;
+      height: 400px;
+      object-fit: cover;
+    }
+    @keyframes slide {
+      0% { margin-left: 0; }
+      33% { margin-left: -100vw; }
+      66% { margin-left: -200vw; }
+      100% { margin-left: 0; }
+    }
+
+    section {
+      padding: 40px 20px;
       max-width: 900px;
       margin: auto;
     }
-    section {
-      margin-bottom: 2.5rem;
+
+    section h2 {
+      color: #d4af37;
+      border-bottom: 1px solid #444;
+      padding-bottom: 5px;
     }
-    h2 {
-      color: #3366cc;
+
+    ul li {
+      margin-bottom: 10px;
     }
-    ul {
-      padding-left: 1.5rem;
-    }
+
     footer {
+      background-color: #000;
       text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #888;
+      padding: 15px;
+      color: #f0e6d2;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Abhey Singh Guram</h1>
-    <br>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#journal">Journal</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <section>
-      <p>Hi! I’m Abhey, a soon-to-be graduate of Beloit College with a triple major in Quantitative Economics, Political Science, and Environmental Studies — a title so long I sometimes need a snack break in the middle of saying it.</p>
-    </section>
+  <section class="carousel" id="home">
+    <div class="slides">
+      <img src="images/carousel1.jpg" alt="Mountains">
+      <img src="images/carousel2.jpg" alt="Forest">
+      <img src="images/carousel3.jpg" alt="Castle">
+    </div>
+  </section>
 
-    <section>
-      <h2>🧭 What You'll Find Here</h2>
-      <ul>
-        <li><strong> Research:</strong> Explore my published paper(s) and academic writing.</li>
-        <li><strong> Projects & Work:</strong> A peek into what I’ve built and where I’ve worked.</li>
-        <li><strong> What I'm Reading:</strong> My current reading list and recommendations.</li>
-        <li><strong> U.S. Map Adventures:</strong> States I've explored and travel notes.</li>
-        <li><strong> Photo Journal:</strong> Glimpses of nature, food, and road trips.</li>
-        <li><strong> Awards & Experiences:</strong> Academic honors and leadership roles.</li>
-        <li><strong> What’s Next?</strong> My upcoming plans and goals post-graduation.</li>
-      </ul>
-    </section>
+  <section>
+    <h2>Welcome</h2>
+    <p>Hi! I’m Abhey, a soon-to-be graduate of Beloit College with a triple major in Quantitative Economics, Political Science, and Environmental Studies. I love solving climate problems through research and plan to pursue a Ph.D. My life also revolves around food, mountains, and good stories.</p>
+  </section>
 
-    <section>
-      <h2> A Note</h2>
-      <p>Whether you’re here to read my work, see what I’m up to, or just stumble across pictures of trees and food — welcome. I hope this space reflects both my academic journey and the human side of who I am: a lover of learning, the outdoors, and good meals.</p>
-    </section>
-  </main>
+  <section id="research">
+    <h2>📄 Research</h2>
+    <ul>
+      <li><strong>Understanding Incentives in Renewable Energy</strong> – A look at how policy impacts adoption rates. [Link]</li>
+      <li><strong>Economic Trade-offs in Climate Policy</strong> – Published in Environmental Economics Review. [Link]</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>🎒 Projects & Work</h2>
+    <ul>
+      <li><strong>Carbon Footprint Calculator</strong> – Developed a Python tool to measure emissions at individual level.</li>
+      <li><strong>Political Mapping Dashboard</strong> – Interactive D3-based visualization for political trends.</li>
+    </ul>
+  </section>
+
+  <section id="journal">
+    <h2>🏕️ Travel & Photo Journal</h2>
+    <p>I document my travels across the U.S., with photos of hikes, food spots, and historic places. Here's a preview:</p>
+    <ul>
+      <li><strong>Yosemite National Park</strong> – The granite cathedrals of nature.</li>
+      <li><strong>New Orleans</strong> – Jazz, jambalaya, and joy.</li>
+      <li><strong>Boston</strong> – A scholar’s dream city.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>💌 Contact</h2>
+    <p>Want to collaborate or just say hi? Drop me an email at <strong>abhey@example.com</strong> or connect with me on LinkedIn at <strong>linkedin.com/in/abhey</strong>.</p>
+  </section>
 
   <footer>
-    &copy; 2025 Abhey Singh Guram · abheyguram.github.io
+    &copy; 2025 Abhey Singh Guram · All Rights Reserved
   </footer>
+
 </body>
 </html>
