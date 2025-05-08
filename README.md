@@ -52,7 +52,7 @@
 <body>
   <header>
     <h1>Abhey Singh Guram</h1>
-    <p>🎓 Academic Human • Curious Wanderer • Decent Cook</p>
+    <br>
   </header>
 
   <main>
@@ -63,18 +63,18 @@
     <section>
       <h2>🧭 What You'll Find Here</h2>
       <ul>
-        <li><strong>📄 Research:</strong> Explore my published paper(s) and academic writing.</li>
-        <li><strong>🎒 Projects & Work:</strong> A peek into what I’ve built and where I’ve worked.</li>
-        <li><strong>📚 What I'm Reading:</strong> My current reading list and recommendations.</li>
-        <li><strong>🗺️ U.S. Map Adventures:</strong> States I've explored and travel notes.</li>
-        <li><strong>🏕️ Photo Journal:</strong> Glimpses of nature, food, and road trips.</li>
-        <li><strong>🏆 Awards & Experiences:</strong> Academic honors and leadership roles.</li>
-        <li><strong>✨ What’s Next?</strong> My upcoming plans and goals post-graduation.</li>
+        <li><strong> Research:</strong> Explore my published paper(s) and academic writing.</li>
+        <li><strong> Projects & Work:</strong> A peek into what I’ve built and where I’ve worked.</li>
+        <li><strong> What I'm Reading:</strong> My current reading list and recommendations.</li>
+        <li><strong> U.S. Map Adventures:</strong> States I've explored and travel notes.</li>
+        <li><strong> Photo Journal:</strong> Glimpses of nature, food, and road trips.</li>
+        <li><strong> Awards & Experiences:</strong> Academic honors and leadership roles.</li>
+        <li><strong> What’s Next?</strong> My upcoming plans and goals post-graduation.</li>
       </ul>
     </section>
 
     <section>
-      <h2>💌 A Note</h2>
+      <h2> A Note</h2>
       <p>Whether you’re here to read my work, see what I’m up to, or just stumble across pictures of trees and food — welcome. I hope this space reflects both my academic journey and the human side of who I am: a lover of learning, the outdoors, and good meals.</p>
     </section>
   </main>
